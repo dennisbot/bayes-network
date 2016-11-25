@@ -1,6 +1,6 @@
 # Redes Bayesianas
 
-Este trabajo contiene la modelado en SAMIAM e implementación de algunas funciones para modelar una red bayesiana en Matlab/Octave como parte de la Asignatura de Sistemas Inteligentes
+Este trabajo contiene el modelado de una red bayesiana (Credit_net) en SAMIAM y también la implementación de algunas funciones para modelar una red bayesiana en Matlab/Octave como parte de la Asignatura de Sistemas Inteligentes
 
 ## Requerimientos
 
