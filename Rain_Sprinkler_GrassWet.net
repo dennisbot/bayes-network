@@ -1,0 +1,58 @@
+net
+{
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@7f0fffc6";
+	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@50e96521";
+	node_size = (130.0 55.0);
+}
+
+node GrassWet
+{
+	states = ("F" "T" );
+	position = (390 -357);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "GrassWet";
+	excludepolicy = "include whole CPT";
+}
+node Sprinkler
+{
+	states = ("T" "F" );
+	position = (201 -209);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "Sprinkler";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node Rain
+{
+	states = ("T" "F" );
+	position = (472 -177);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "Rain";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+potential ( GrassWet | Sprinkler Rain )
+{
+	data = (((	0.010000000000000009	0.99	)
+		(	0.09999999999999998	0.9	))
+		((	0.19999999999999996	0.8	)
+		(	1.0	0.0	)));
+}
+potential ( Sprinkler | Rain )
+{
+	data = ((	0.01	0.99	)
+		(	0.4	0.6	));
+}
+potential ( Rain | )
+{
+	data = (	0.2	0.8	);
+}
