@@ -4,7 +4,8 @@ Este trabajo contiene el modelado de una red bayesiana (Credit_net) en SAMIAM y 
 
 ## Requerimientos
 
-* Matlab y/o Octave
+* (para los archivos *.m) Matlab y/o Octave
+* (para los archivos *.net)  SAMIAM (Herramienta de modelado de redes bayesianas)
 
 [Enlace al código fuente principal](https://github.com/dennisbot/bayes-network/blob/master/ComputeMarginal.m)
 
