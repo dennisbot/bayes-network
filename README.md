@@ -6,7 +6,7 @@ Este trabajo contiene la modelado en SAMIAM e implementación de algunas funcion
 
 * Matlab y/o Octave
 
-[Enlace al código fuente principal](https://github.com/dennisbot/bayes-network/blob/master/main.cpp)
+[Enlace al código fuente principal](https://github.com/dennisbot/bayes-network/blob/master/ComputeMarginal.m)
 
 
 
